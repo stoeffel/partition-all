@@ -2,7 +2,7 @@ partition-all
 ================
 
 [![Build Status](https://travis-ci.org/stoeffel/partition-all.svg)](https://travis-ci.org/stoeffel/partition-all) [![npm version](https://badge.fury.io/js/partition-all.svg)](http://badge.fury.io/js/partition-all)
-> Returns a sequence of lists like partition, but may include partitions with fewer than n items at the end.
+> Returns a sequence of arrays, but may include partitions with fewer than n items at the end.
 
 Installation
 ------------
