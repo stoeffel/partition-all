@@ -1,6 +1,6 @@
 {
   "name": "partition-all",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns a sequence of lists like partition, but may include partitions with fewer than n items at the end.",
   "main": "index.js",
   "scripts": {
