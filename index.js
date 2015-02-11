@@ -7,15 +7,22 @@ var curry = _interopRequire(require("chickencurry"));
 
 
 
+var isInteger = function (value) {
+  return typeof value === "number" && isFinite(value) && Math.floor(value) === value;
+};
+var isArray = function (arr) {
+  return Object.prototype.toString.call(arr) === "[object Array]";
+};
+
 var _partitionAll = function (n, coll) {
   var result = [];
   var part = [];
 
-  if (!Number.isInteger(n)) {
+  if (!isInteger(n)) {
     throw new Error("" + n + " should be a integer");
   }
 
-  if (!Array.isArray(coll)) {
+  if (!isArray(coll)) {
     throw new Error("" + coll + " should be an array");
   }
 

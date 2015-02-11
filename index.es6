@@ -3,15 +3,18 @@
 import curry from 'chickencurry';
 
 
+let isInteger = (value) => typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
+let isArray = (arr) => Object.prototype.toString.call(arr) === '[object Array]';
+
 let _partitionAll = (n, coll) => {
   let result = [];
   let part = [];
 
-  if (!Number.isInteger(n)) {
+  if (!isInteger(n)) {
     throw new Error(`${n} should be a integer`);
   }
 
-  if (!Array.isArray(coll)) {
+  if (!isArray(coll)) {
     throw new Error(`${coll} should be an array`);
   }
 
